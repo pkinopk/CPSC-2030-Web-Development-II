@@ -35,7 +35,7 @@ footer ul {
     padding: 0;
 }
 
+
 /* Desktop Layout */
-@media screen and (min-width:500px) {
-    
-}
+
+@media screen and (min-width:500px) {}
