@@ -1,6 +1,4 @@
-/* Mobile Layout */
-
-@import url('https://fonts.googleapis.com/css?family=Crimson+Text|Quattrocento');
+Mobile Layout @import url('https://fonts.googleapis.com/css?family=Crimson+Text|Quattrocento');
 html {
     font-family: 'Crimson Text', serif;
 }
@@ -17,8 +15,6 @@ h1 {
 
 h2 {
     text-transform: uppercase;
-    border-bottom: 1px solid;
-    top: 5em;
     color: slategrey;
 }
 
@@ -102,8 +98,17 @@ main p:first-of-type:first-letter {
 
 span {
     position: relative;
-    margin-bottom: 1.25rem;
 }
+
+/* span::after {
+    content: '';
+    position: absolute;
+    height: 1em;
+    width: 160%;
+    border-bottom: 2px solid;
+    margin-top: -0.5em;
+    margin-left: 0.3em;
+} */
 
 figcaption {
     text-align: center;
@@ -113,6 +118,19 @@ figcaption {
     display: inline-block;
     color: white;
     width: 100%;
+    top: 0;
+}
+
+figure {
+    position: relative;
+}
+
+h2+p {
+    font-style: italic;
+}
+
+h2[id="selectors"]+p {
+    font-style: normal;
 }
 
 
@@ -128,7 +146,6 @@ figcaption {
     }
     figure {
         float: left;
-        position: relative;
         margin: 0.5em;
     }
     img {
@@ -139,8 +156,5 @@ figcaption {
     .wrapper {
         max-width: 800px;
         margin: auto;
-    }
-    p:first-child {
-        font-style: italic;
     }
 }
