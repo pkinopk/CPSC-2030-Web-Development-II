@@ -1,0 +1,51 @@
+/*Mobiel layout*/
+
+@import url('https://fonts.googleapis.com/css?family=Courgette');
+img {
+    width: 100%;
+}
+
+h1,
+h2 {
+    font-family: 'Courgette', cursive;
+}
+
+div {
+    background-color: cornflowerblue;
+    color: white;
+}
+
+
+/*Desktop Layout*/
+
+@media screen and (min-width:500px) {
+    /*First div*/
+    div:first-of-type h2 {
+        position: relative;
+        bottom: 2rem;
+        right: 1rem;
+        background-color: white;
+        color: cornflowerblue;
+        border: 3px solid cornflowerblue;
+        border-radius: 5px;
+    }
+    /*Second div*/
+    div:nth-of-type(2) {
+        position: relative;
+    }
+    div:nth-of-type(2) p {
+        position: absolute;
+        bottom: 0;
+    }
+    /*Third div*/
+    div:last-of-type {
+        position: fixed;
+        bottom: 0;
+        right: 0;
+    }
+    div {
+        width: 31.33%;
+        margin: 1%;
+        float: left;
+    }
+}

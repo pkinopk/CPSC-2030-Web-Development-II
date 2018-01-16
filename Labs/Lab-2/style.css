@@ -1,0 +1,52 @@
+h1 {
+    border-bottom: 10px solid;
+    animation-name: border-blink;
+    display: inline-block;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    /*animation-timing-function: al;*/
+}
+
+h2 {
+    border: 1px solid;
+    animation-name: spinning;
+    display: inline-block;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes spinning {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+div {
+    margin-top: 10rem;
+    border: 5px solid coral;
+    /*mouse leave*/
+    transition: background-color .5s, border-width 1s .5s;
+}
+
+div:hover {
+    background-color: lightgreen;
+    border-width: 15px;
+    /*mouse enter*/
+    transition: background-color 3s, border-width 1s 1s; /*First number is the duration of the animation, second number is the delay to start */
+}
+
+@keyframes border-blink {
+    0% {
+        border-color: white;
+    }
+    50% {
+        border-color: deeppink;
+    }
+    100% {
+        border-color: seagreen;
+    }
+}

@@ -1,0 +1,158 @@
+/* stylelint-disable rule-empty-line-before, selector-list-comma-newline-after, no-missing-end-of-source-newline */
+
+/* Mobile Layout */
+
+@import url('https://fonts.googleapis.com/css?family=Poiret+One|Sacramento');
+h1, h2 {
+  color: cornflowerblue;
+}
+
+h1 {
+  font-family: 'Sacramento', cursive;
+  text-align: center;
+  font-size: 3rem;
+}
+
+h2 {
+  font-family: 'Poiret One', cursive;
+}
+
+nav a {
+  font-family: 'Poiret One', cursive;
+  font-size: 1.5em;
+}
+
+img {
+  width: 100%;
+}
+
+nav {
+  order: 0;
+}
+
+main {
+  order: 1;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li a {
+  color: hotpink;
+  text-decoration: none;
+}
+
+nav ul li {
+  border: 5px solid white;
+  padding: 10px;
+  background-color: lavenderblush;
+}
+
+/* Background Animation */
+
+body {
+  display: flex;
+  flex-direction: column;
+  background-image: url(./images/inspiration-geometry.png);
+  animation: bkg-animation 10s infinite;
+  animation-timing-function: linear;
+}
+
+@keyframes bkg-animation {
+  0% {
+    background-position: 0;
+  }
+  100% {
+    background-position: 412px;
+  }
+}
+
+/* End Background Animation */
+
+nav ul li {
+  transition: border-top .3s, border-right .3s .3s, border-bottom .3s .6s, border-left .3s .9s;
+}
+
+nav ul li:hover {
+  border-top: 4px solid deeppink;
+  border-right: 4px solid deeppink;
+  border-bottom: 4px solid deeppink;
+  border-left: 4px solid deeppink;
+}
+
+@media screen and (min-width: 800px) {
+  h1{
+    font-size: 4rem;
+  }
+  body {
+    align-items: center;
+  }
+  header, main, nav {
+    width: 80%;
+  }
+  main {
+    display: flex;
+    flex-direction: row;
+    flex-shrink: 0;
+  }
+  img {
+    height: 150px;
+    width: auto;
+    border: 4px white solid;
+  }
+  img:hover {
+    transform: scale(1.5, 1.5);
+    transition-duration: 1s;
+  }
+  .gallery img {
+    border: 4px transparent solid;
+  }
+  .featured {
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    background-color: cornflowerblue;
+    color: white;
+    align-items: center;
+    flex-shrink: 0;
+    padding: 30px;
+    margin: 5px;
+  }
+  .featured h2 {
+    color: white;
+    align-self: flex-start;
+  }
+  .featured img {
+    margin-bottom: 30px;
+  }
+  .featured img:last-child {
+    margin-bottom: 0;
+  }
+  .gallery {
+    display: flex;
+    align-content: flex-start;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    background-color: white;
+    border: 1px hotpink dashed;
+    padding: 30px;
+    margin: 5px;
+  }
+  .gallery h2 {
+    width: 100%;
+  }
+  nav ul {
+    justify-content: space-between;
+    flex-direction: row;
+  }
+  nav ul li {
+    flex-shrink: 1;
+    flex-grow: 1;
+  }
+}

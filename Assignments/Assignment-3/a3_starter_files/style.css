@@ -1,0 +1,115 @@
+
+html 
+{
+	font-family: "Mukta Malar";
+}
+
+body 
+{
+	margin:0;
+}
+
+
+h1 {
+	font-family: "Bungee";
+}
+
+h2 
+{
+	font-family: "Slabo 27px";
+
+	color:tomato;
+}
+
+.header-wrapper>button 
+{
+
+	font-size: 1.5rem;
+
+}
+
+header 
+{
+	border-bottom: 10px solid tomato;
+
+}
+
+.header-image 
+{
+	height:200px;
+	width:100%;
+
+	object-fit: cover;
+}
+
+nav ul
+{
+
+	padding:0;
+	list-style-type: none;
+	font-size: 1.5rem;
+
+}
+
+nav ul li 
+{
+	padding:1rem;
+	text-align: center;
+}
+
+form 
+{
+	display: none;
+}
+
+aside 
+{
+	background-color: lemonchiffon;
+}
+
+nav a
+{
+	color:tomato;
+	text-decoration: none;
+}
+
+
+main, aside 
+{
+
+		padding:1rem;
+}
+
+@media screen and (min-width: 800px)
+{
+
+	.header-image 
+	{
+		height:400px;
+	}
+
+	nav ul 
+	{
+
+	font-size: 1rem;
+
+	}
+
+	main 
+	{
+
+		box-sizing: border-box;
+	}
+
+	aside 
+	{
+
+		box-sizing: border-box;
+	}
+}
+
+
+
+
+
+
