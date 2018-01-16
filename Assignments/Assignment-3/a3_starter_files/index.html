@@ -7,10 +7,21 @@
 	<link rel="stylesheet" href="style.css">
 	<link rel="stylesheet" href="sticky.css">
 	<link rel="stylesheet" href="mystyles.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
 	<script>
+		$(function() {
+
+			$(window).on("scroll",function() {
+				if ($(window).scrollTop() > 400) {
+					$("header").addClass("sticky");
+				}
+				else {
+					$("header").removeClass("sticky");
+				}
+			});
+		});
 		
-		// Your jQuery code goes here
 
 	</script>
 </head>
