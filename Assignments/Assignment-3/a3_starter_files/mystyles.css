@@ -1,9 +1,21 @@
-/* TODO Mobile: Change the icon for the search buttom */
-
-
+@import url('https://fonts.googleapis.com/css?family=Bungee|Mukta+Malar|Slabo+27px');
 /*Mobile Layout*/
 
-@import url('https://fonts.googleapis.com/css?family=Bungee|Mukta+Malar|Slabo+27px');
+.visually-hidden {
+    /* https://snook.ca/archives/html_and_css/hiding-content-for-accessibility */
+    position: absolute !important;
+    height: 1px;
+    width: 1px;
+    overflow: hidden;
+    clip: rect(1px 1px 1px 1px);
+    /* IE6, IE7 */
+    clip: rect(1px, 1px, 1px, 1px);
+}
+
+#open-search {
+    background-color: transparent;
+    border: 0;
+}
 
 /* Desktop Layout */
 
@@ -30,23 +42,11 @@
     }
     #open-search {
         order: 1;
-        background-color: transparent;
-        border: 0;
     }
     .wrapper {
         margin: auto;
         max-width: 1000px;
         display: flex;
         flex-direction: row;
-    }
-    .visually-hidden {
-        /* https://snook.ca/archives/html_and_css/hiding-content-for-accessibility */
-        position: absolute !important;
-        height: 1px;
-        width: 1px;
-        overflow: hidden;
-        clip: rect(1px 1px 1px 1px);
-        /* IE6, IE7 */
-        clip: rect(1px, 1px, 1px, 1px);
     }
 }
