@@ -7,6 +7,7 @@
 	<link rel="stylesheet" href="style.css">
 	<link rel="stylesheet" href="sticky.css">
 	<link rel="stylesheet" href="mystyles.css">
+	<link rel="stylesheet" href="icomoon/style.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
 	<script>
@@ -20,6 +21,23 @@
 					$("header").removeClass("sticky");
 				}
 			});
+
+			$(".search-button").addClass("icon-search");
+
+			$("#open-search").addClass("icon-search");
+			
+			$("#open-search").on("click", function() {
+				$(".search-form").fadeToggle();
+			});
+
+			$(".close-button").addClass("icon-cross")
+
+			$(".close-button").on("click", function() {
+				$(".search-form").fadeToggle();
+			});
+			
+
+			
 		});
 		
 
@@ -36,7 +54,7 @@
 				<h1>Assignment 3: Intro jQuery</h1>
 			
 				<button class="search-button" id="open-search">
-					Open Search Window
+					<span class="visually-hidden">Open Search Window</span>
 				</button>
 	
 				<nav>
@@ -54,7 +72,7 @@
 					<input type="search" id="search-bar" name="search" placeholder="search">
 	
 					<button type="submit" class="search-button">
-						Submit Search
+						<span class="visually-hidden">Submit Search</span>
 					</button>
 	
 					<button type="button" class="close-button"></button>
