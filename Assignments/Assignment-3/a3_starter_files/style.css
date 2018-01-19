@@ -1,115 +1,92 @@
-
-html 
-{
-	font-family: "Mukta Malar";
+html {
+    font-family: "Mukta Malar";
 }
 
-body 
-{
-	margin:0;
+body {
+    margin: 0;
 }
 
 
 h1 {
-	font-family: "Bungee";
+    font-family: "Bungee";
 }
 
-h2 
-{
-	font-family: "Slabo 27px";
+h2 {
+    font-family: "Slabo 27px";
 
-	color:tomato;
+    color: tomato;
 }
 
-.header-wrapper>button 
-{
+.header-wrapper > button {
 
-	font-size: 1.5rem;
-
-}
-
-header 
-{
-	border-bottom: 10px solid tomato;
+    font-size: 1.5rem;
 
 }
 
-.header-image 
-{
-	height:200px;
-	width:100%;
-
-	object-fit: cover;
-}
-
-nav ul
-{
-
-	padding:0;
-	list-style-type: none;
-	font-size: 1.5rem;
+header {
+    border-bottom: 10px solid tomato;
 
 }
 
-nav ul li 
-{
-	padding:1rem;
-	text-align: center;
+.header-image {
+    height: 200px;
+    width: 100%;
+
+    object-fit: cover;
 }
 
-form 
-{
-	display: none;
+nav ul {
+
+    padding: 0;
+    list-style-type: none;
+    font-size: 1.5rem;
+
 }
 
-aside 
-{
-	background-color: lemonchiffon;
+nav ul li {
+    padding: 1rem;
+    text-align: center;
 }
 
-nav a
-{
-	color:tomato;
-	text-decoration: none;
+form {
+    display: none;
 }
 
-
-main, aside 
-{
-
-		padding:1rem;
+aside {
+    background-color: lemonchiffon;
 }
 
-@media screen and (min-width: 800px)
-{
-
-	.header-image 
-	{
-		height:400px;
-	}
-
-	nav ul 
-	{
-
-	font-size: 1rem;
-
-	}
-
-	main 
-	{
-
-		box-sizing: border-box;
-	}
-
-	aside 
-	{
-
-		box-sizing: border-box;
-	}
+nav a {
+    color: tomato;
+    text-decoration: none;
 }
 
 
+main,
+aside {
 
+    padding: 1rem;
+}
 
+@media screen and (min-width: 800px) {
 
+    .header-image {
+        height: 400px;
+    }
 
+    nav ul {
+
+        font-size: 1rem;
+
+    }
+
+    main {
+
+        box-sizing: border-box;
+    }
+
+    aside {
+
+        box-sizing: border-box;
+    }
+}
