@@ -1,12 +1,9 @@
 $(function () {
 
-	$("#menu-button1").on("click", function () {
-		$("#main-menu").toggle();
+	$("a[id*='menu-button']").on("click", function (e) {
+		// e.preventDefault();
+		$(this).parent().find("ul").toggle();
 	});
-
-	// $("#menu-button2").on("click", function () {
-	// 	$("#secondary-menu").toggle();
-	// });
 
 	$("#menu-button1").on("keydown", function (e) {
 		e.preventDefault();
@@ -38,7 +35,7 @@ $(function () {
 		}
 		if (e.which == 27) { // ESC
 			$("#main-menu").toggle();
-			$("#menu-button1").focus();
+			// $("#menu-button1").focus();
 			posititon = 1;
 		}
 
